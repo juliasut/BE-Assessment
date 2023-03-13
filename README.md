@@ -112,18 +112,18 @@ Create a `GET`route in the `photoRoutes.js` file that:
 
 Create a `GET`route in the `photoRoutes.js` file that:
 
-- [ ] Returns an array of a user's **Unsplash** photos based on a `username` parameter.
-  - [ ] The array of photos should be an array of objects with the following keys:
-    - [ ] `id` - photo's id
-    - [ ] `username` - the `username` of the `user` who added the photo
-    - [ ] `description` - photo's description
-    - [ ] `url` - photo's raw URL
-    - [ ] if the `description` is `null`, the `description` key should be assigned to a string that reads, `"No description provided."`
-- [ ] If the `catch` block is triggered, it returns the error `status` and a JSON object with a `message` key assigned to the error message contained in the `axios` error response data. Use [Axios Response Schema documentation](https://axios-http.com/docs/res_schema) as needed.
+- [x] Returns an array of a user's **Unsplash** photos based on a `username` parameter.
+  - [x] The array of photos should be an array of objects with the following keys:
+    - [x] `id` - photo's id
+    - [x] `username` - the `username` of the `user` who added the photo
+    - [x] `description` - photo's description
+    - [x] `url` - photo's raw URL
+    - [x] if the `description` is `null`, the `description` key should be assigned to a string that reads, `"No description provided."`
+- [x] If the `catch` block is triggered, it returns the error `status` and a JSON object with a `message` key assigned to the error message contained in the `axios` error response data. Use [Axios Response Schema documentation](https://axios-http.com/docs/res_schema) as needed.
 
 **Commit to Github**
 
-- [ ] Commit your work to Github and push to your forked repository w/ a commit message that reads, `"Part III - Advanced Routes: Return Combined Data"`.
+- [x] Commit your work to Github and push to your forked repository w/ a commit message that reads, `"Part III - Advanced Routes: Return Combined Data"`.
 
 ### Part IV - Set up MongoDB and connect to your application
 
