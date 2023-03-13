@@ -1,9 +1,12 @@
 const express = require('express');
+const connectDB = require('./config/db');
 const photoRoutes = require('./routes/photoRoutes');
+const dotenv = require('dotenv').config();
+const PORT = process.env.PORT || 3000;
+
+connectDB();
 
 const app = express();
-const PORT = 3000;
-
 app.use(express.json());
 
 app.get('/', (req, res) => {

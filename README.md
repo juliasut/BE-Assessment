@@ -127,9 +127,9 @@ Create a `GET`route in the `photoRoutes.js` file that:
 
 ### Part IV - Set up MongoDB and connect to your application
 
-- [ ] Set up a `MongoDB` database
-- [ ] Connect it to your application.
-- [ ] Add the `MONGO_URI` to your `.env` file
+- [x] Set up a `MongoDB` database
+- [x] Connect it to your application.
+- [x] Add the `MONGO_URI` to your `.env` file
 
 ### Part V - Authentication
 
