@@ -86,25 +86,25 @@ Before you start, set up your **Developer** account on **Unsplash** and create a
 
 **Create the following `GET` routes in the `photoRoutes.js` file:**
 
-- [ ] Use `/api/photos` as the base path for all photo routes
+- [x] Use `/api/photos` as the base path for all photo routes
 
 **`/api/photos` Route**
 
 Create a `GET`route in the `photoRoutes.js` file that:
 
-- [ ] Returns an array of **raw** **Unsplash** photo URLs.
-- [ ] If the `catch` block is triggered, returns a `500` status and a JSON object with a `message` key assigned to a string that reads, `"Server error. Please try again later."`
+- [x] Returns an array of **raw** **Unsplash** photo URLs.
+- [x] If the `catch` block is triggered, returns a `500` status and a JSON object with a `message` key assigned to a string that reads, `"Server error. Please try again later."`
 
 **`/api/photos/:id` Route**
 
 Create a `GET`route in the `photoRoutes.js` file that:
 
-- [ ] Returns a single photo object from the Unsplash API based on a photo's `id`
-- [ ] If the `catch` block is triggered, returns a `500` status and a JSON object with a `message` key assigned to a string that reads, `"Server error. Please try again later."`
+- [x] Returns a single photo object from the Unsplash API based on a photo's `id`
+- [x] If the `catch` block is triggered, returns a `500` status and a JSON object with a `message` key assigned to a string that reads, `"Server error. Please try again later."`
 
 **Commit to Github**
 
-- [ ] Commit your work to Github and push to your forked repository w/ a commit message that reads, `"Part II - API GET Routes: Return Unsplash Photos"`.
+- [x] Commit your work to Github and push to your forked repository w/ a commit message that reads, `"Part II - API GET Routes: Return Unsplash Photos"`.
 
 ### Part III - Advanced Route: Return Combined Data
 
