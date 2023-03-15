@@ -135,30 +135,30 @@ Create a `GET`route in the `photoRoutes.js` file that:
 
 **Create Authentication using `JWT`:**
 
-- [ ] Create a `User` model that has the following properties:
+- [x] Create a `User` model that has the following properties:
 
-  - [ ] `username` - a string
-  - [ ] `password` - a string
-  - [ ] `email` - a string
-  - [ ] Set all properties to required
-  - [ ] Make sure that the `email` is unique
-  - [ ] Include a timestamp
+  - [x] `username` - a string
+  - [x] `password` - a string
+  - [x] `email` - a string
+  - [x] Set all properties to required
+  - [x] Make sure that the `email` is unique
+  - [x] Include a timestamp
 
-- [ ] Create a `register` route where users can sign up for your application
-  - [ ] All passwords should be hashed using `bcryptjs` and **10 salt rounds**
-  - [ ] Make sure that the user's `email` is unique
-  - [ ] If the user's `email` is not unique, return a `400` status and a JSON object with a `message` key assigned to a string that reads, `"Email already exists."`
-- [ ] Create a `login` route where users can sign in
-  - [ ] `login` route should compare the hashed password to the password in the user request and returns a `JWT token`
-- [ ] Create a `logout` route that invalidates the `JWT token`
-- [ ] Create the `JWT token` using `jsonwebtoken`
-- [ ] Create a middleware that checks for the `JWT token` and verifies it
-- [ ] Create a private `/me` route that returns the user's information based on the `JWT token`
-- [ ] Store the `JWT_SECRET` in your `.env` file
+- [x] Create a `register` route where users can sign up for your application
+  - [x] All passwords should be hashed using `bcryptjs` and **10 salt rounds**
+  - [x] Make sure that the user's `email` is unique
+  - [x] If the user's `email` is not unique, return a `400` status and a JSON object with a `message` key assigned to a string that reads, `"Email already exists."`
+- [x] Create a `login` route where users can sign in
+  - [x] `login` route should compare the hashed password to the password in the user request and returns a `JWT token`
+- [ ] Create a `logout` route that invalidates the `JWT token` UPD: not required
+- [x] Create the `JWT token` using `jsonwebtoken`
+- [x] Create a middleware that checks for the `JWT token` and verifies it
+- [x] Create a private `/me` route that returns the user's information based on the `JWT token`
+- [x] Store the `JWT_SECRET` in your `.env` file
 
 **Commit to Github**
 
-- [ ] Commit your work to Github and push to your forked repository w/ a commit message that reads, `"Part VI - Authentication"`.
+- [x] Commit your work to Github and push to your forked repository w/ a commit message that reads, `"Part VI - Authentication"`.
 
 ### Part VI - Collection of Favorite Photos
 
