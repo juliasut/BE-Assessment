@@ -6,7 +6,9 @@ const User = require('../models/userModel');
 
 // Generate JWT
 const generateToken = (id) => {
-  return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: process.env.JWT_LIFETIME });
+  return jwt.sign({ id }, process.env.JWT_SECRET, {
+    expiresIn: process.env.JWT_LIFETIME,
+  });
 };
 
 // Public POST api/users/register
@@ -38,7 +40,9 @@ const registerUser = asyncHandler(async (req, res) => {
   });
 
   if (user) {
-    res.status(201).json({ msg: "user created", token: generateToken(user.id) });
+    res
+      .status(201)
+      .json({ msg: 'user created', token: generateToken(user.id) });
   } else {
     res.status(400);
     throw new Error('Invalid user data');
@@ -71,7 +75,15 @@ const loginUser = asyncHandler(async (req, res) => {
 
 // Private GET api/users/me
 const getMe = asyncHandler(async (req, res) => {
-  return res.json({ message: "me" });
+  const { id } = req.user;
+  const { username, email } = await User.findById(id);
+
+  if (!username || !email) {
+    res.status(400);
+    throw new Error('User not found');
+  }
+
+  return res.status(200).json({ id, username, email });
 });
 
 module.exports = { registerUser, loginUser, getMe };

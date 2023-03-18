@@ -164,21 +164,21 @@ Create a `GET`route in the `photoRoutes.js` file that:
 
 **Note:** All functionality in this section should only be accessed by authenticated users.
 
-- [ ] Implement `asyncHandler` to avoid `try/catch` blocks and to trigger error handling middleware (error middleware to be completed in **Part VII**)
-- [ ] Create a new collection in your database called `favoritePhotos`
-- [ ] Create a `model` for your `favoritePhotos` collection with a schema that includes the following:
-  - [ ] `user` - the authenticated `unsplash-backend-assessment` user's `id`
-  - [ ] `url` - the photo's raw url
-  - [ ] `description` - the photo's description
-  - [ ] `username` - the **Unsplash** user's `username` associated with the photo url
-- [ ] Create a route that allows a user to add a photo's `url`, `description`, and **Unsplash** user's `username` as well as an `explanation` of why they added the photo to their `favoritePhotos` collection
-- [ ] Create a route that allows a user to `get` all of their `favoritePhotos`
-- [ ] Create a route that allows a user to `remove` a photo from their `favoritePhotos`
-- [ ] Create a route that allows a user to `edit` their `description` of why they added the photo to their list of `favorites`
+- [x] Implement `asyncHandler` to avoid `try/catch` blocks and to trigger error handling middleware (error middleware to be completed in **Part VII**)
+- [x] Create a new collection in your database called `favoritePhotos`
+- [x] Create a `model` for your `favoritePhotos` collection with a schema that includes the following:
+  - [x] `user` - the authenticated `unsplash-backend-assessment` user's `id`
+  - [x] `url` - the photo's raw url
+  - [x] `description` - the photo's description
+  - [x] `username` - the **Unsplash** user's `username` associated with the photo url
+- [x] Create a route that allows a user to add a photo's `url`, `description`, and **Unsplash** user's `username` as well as an `explanation` of why they added the photo to their `favoritePhotos` collection
+- [x] Create a route that allows a user to `get` all of their `favoritePhotos`
+- [x] Create a route that allows a user to `remove` a photo from their `favoritePhotos`
+- [x] Create a route that allows a user to `edit` their `description` of why they added the photo to their list of `favorites`
 
 **Commit to Github**
 
-- [ ] Commit your work to Github and push to your repository w/ a commit message that reads, `"Part VII - Favorites Collection"`
+- [x] Commit your work to Github and push to your repository w/ a commit message that reads, `"Part VII - Favorites Collection"`
 
 ### Part VII - Error Handling Middleware
 
