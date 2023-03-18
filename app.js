@@ -4,6 +4,7 @@ const dotenv = require('dotenv').config();
 const photoRoutes = require('./routes/photoRoutes');
 const userRoutes = require('./routes/userRoutes');
 const favoritesRoutes = require('./routes/favoritesRoutes');
+const { errorHandler } = require('./middleware/errorMiddleware');
 const PORT = process.env.PORT || 3000;
 
 connectDB();
@@ -21,6 +22,8 @@ app.use('/api/photos', photoRoutes);
 app.use('/api/users', userRoutes);
 
 app.use('/api/favorites', favoritesRoutes);
+
+app.use(errorHandler);
 
 app.listen(PORT, () => {
   console.log(`Listening on port ${PORT}`);

@@ -184,14 +184,14 @@ Create a `GET`route in the `photoRoutes.js` file that:
 
 **Create an `errorHandler` function in the `errorMiddleware.js` file that:**
 
-- [ ] Responds with a `statusCode` and error `message`
-- [ ] Returns the `stack` trace only if the environment is in `development`
-- [ ] Implement the `errorHandler` function in your `app.js` file
-- [ ] Check that the `errorHandler` is working with all of the `favorites` routes created in **Part VI**. No need to implement for `photos` routes.
+- [x] Responds with a `statusCode` and error `message`
+- [x] Returns the `stack` trace only if the environment is in `development`
+- [x] Implement the `errorHandler` function in your `app.js` file
+- [x] Check that the `errorHandler` is working with all of the `favorites` routes created in **Part VI**. No need to implement for `photos` routes.
 
 **Commit to Github**
 
-- [ ] Commit your work to Github and push to your repository w/ a commit message that reads, `"Part VII - Error Handling Middleware"`
+- [x] Commit your work to Github and push to your repository w/ a commit message that reads, `"Part VII - Error Handling Middleware"`
 
 ### Pass in your assessment
 
