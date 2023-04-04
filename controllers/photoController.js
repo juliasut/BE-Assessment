@@ -22,8 +22,8 @@ const getRawPhotoURLs = async (req, res) => {
     return res.status(200).json(rawPhotoURLs);
   } catch (err) {
     return res
-      .status(500)
-      .json({ message: 'Server error. Please try again later.' });
+      .status(err.response.status)
+      .json({ message: err.response.data?.errors[0] });
   }
 };
 
@@ -38,8 +38,8 @@ const getPhotoById = async (req, res) => {
     return res.status(200).json(photo);
   } catch (err) {
     return res
-      .status(500)
-      .json({ message: 'Server error. Please try again later.' });
+      .status(err.response.status)
+      .json({ message: err.response.data?.errors[0] });
   }
 };
 
